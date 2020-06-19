@@ -1,17 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-typedef struct sCell {
-  int data;
-  struct sCell *next;
-  struct sCell *prev;
-} Cell;
-
-typedef struct sList {
-  Cell *init;
-  Cell *end;
-  struct sList *next;
-} List;
+#include "concat.h"
 
 void initList( List * list ) {
   list->init = NULL;
